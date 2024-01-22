@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+    /*User controller*/
 @RestController
 @RequestMapping("/users")
 public class UserController {
-
     private final UserService userService;
 
     @Autowired
