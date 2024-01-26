@@ -25,7 +25,8 @@ public class UserController {
         return ResponseEntity.ok(userService.saveNewUser(user));
     }
 
-    @RequestMapping(value = "/get-all", method = RequestMethod.GET)
+//    @RequestMapping(value = "/get-all", method = RequestMethod.GET)
+    @RequestMapping(value = "/get-all")
     public ResponseEntity<List<User>> getAllUser(@RequestBody User user) {
         return ResponseEntity.ok(userService.getAllUser(user));
     }
